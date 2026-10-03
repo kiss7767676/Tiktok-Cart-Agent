@@ -1,0 +1,29 @@
+[app]
+name = "online-shopping-system-malaysia"
+locale = "ms-MY"
+currency = "MYR"
+database_path = "data/app.sqlite"
+
+[automation]
+default_browser = "chromium"
+use_emulator_for_tiktok = true
+use_emulator_for_all_platforms = false
+stop_before_payment = true
+
+[research]
+enable_external_ai = true
+ai_provider = "ollama"
+ollama_url = "http://127.0.0.1:11434"
+ollama_model = "qwen3:4b"
+
+[platforms.shopee]
+enabled = true
+preferred_automation = "web"
+
+[platforms.lazada]
+enabled = false
+preferred_automation = "web"
+
+[platforms.tiktok]
+enabled = true
+preferred_automation = "android"
